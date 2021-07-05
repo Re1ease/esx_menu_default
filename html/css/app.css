@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.menu {
+	font-family: 'Poppins', sans-serif;
+	min-width: 300px;
+	color: #fff;
+	position: absolute;
+  text-align: left;
+  margin-top: 400px;
+
+  	/* COMMENT OUT THE BELOW TO MAKE IT 3D */
+	/* -webkit-transform: perspective(0px) translateZ(0);
+  transform: perspective(0px) translateZ(0);
+  transform: perspective(900px) rotateY(20deg); */
+}
+
+.head {
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top-left-radius: 5px;
+}
+
+.menu .head {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  margin: auto;
+	text-align: left;
+	height: 60px;
+	color: #ffffff;
+  font-weight: 200;
+  font-size: 14px;
+  background-repeat: no-repeat;
+
+  	/* Replace the URL below with your own. Or keep this one, your choice. */
+	background-image: url(https://i.postimg.cc/gkhGnGgw/banner.png); /* Size: 301x86px */
+	
+
+  	/* If you don't want to use an image, you could use this background to match the palette. */
+	/*background: linear-gradient(90deg, rgba(7, 24, 40, 1) 0%, rgba(87, 224, 255, 0.0) 99%);*/
+}
+
+.menu .menu-items {
+	max-height: 375px;
+	overflow-y: auto;
+  font-weight: 400;  
+}
+
+.menu-items {
+  margin-bottom: 2px;
+}
+
+.menu .menu-items .menu-item {
+	display: block;
+  padding: 10px;
+  font-weight: 200;
+  font-size: 12px;
+  height: 15px;
+  text-indent: 5px;
+  margin-top: 5px;
+  background: linear-gradient(90deg, rgba(7, 24, 40, 1) 0%, rgba(255, 46, 46, 0.0) 80%);
+  color: rgba(143, 143, 143, 1);
+  text-shadow: 0px 0px black;
+}
+
+.menu .menu-items .menu-item.selected {
+	color: white;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  font-size: 13px;
+  animation: pulse 750ms;
+  background: linear-gradient(90deg, rgba(0, 140, 212, 1) 0%, rgba(255, 255, 255, 0) 80%);
+  text-shadow: 1px 1px black;
+}
+
+.menu.align-left {
+	left: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 0;
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 0;
+  border-bottom: 6px solid;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+	right: 10;
+	top: 0;
+  border-bottom: 6px solid;
+}
+
+.menu.align-right {
+	right: 0;
+	top: 50%;
+  border-left: 6px solid;
+	transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 0;
+  border-top: 6px solid;
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 0;
+  border-top: 6px solid;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 0;
+  border-top: 6px solid;
+}
+
+.menu.align-center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+  border-top: 6px solid;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1.0);} 20% {transform: scale(1.04);} 100% {transform: scale(1.0);}}
