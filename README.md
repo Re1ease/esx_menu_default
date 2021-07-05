@@ -1,5 +1,5 @@
 # Information
-Only the file 'app.css' has been modified. You can either replace that file by itself, or replace the resource as a whole.
+This is re-design of the original esx_menu_default resource.
 
 # Install
 1. Create a backup of your current esx_menu_default resource.
